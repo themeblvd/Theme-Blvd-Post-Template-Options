@@ -130,13 +130,13 @@ class Theme_Blvd_Post_Template_Options {
                 array(
                     'id'        => 'cat',
                     'name'      => __( 'cat', 'themeblvd_pto' ),
-                    'desc'      => __( 'Category ID(s) to include/exclude.<br>Ex: 1<br>Ex: 1, 2, 3<br>Ex: -1,-2,-3', 'themeblvd_pto' ),
+                    'desc'      => __( 'Category ID(s) to include/exclude.<br>Ex: 1<br>Ex: 1,2,3<br>Ex: -1,-2,-3', 'themeblvd_pto' ),
                     'type'      => 'text'
                 ),
                 array(
                     'id'        => 'category_name',
                     'name'      => __( 'category_name', 'themeblvd_pto' ),
-                    'desc'      => __( 'Category slug(s) to include.<br>Ex: cat-1<br>Ex: cat-1, cat-2', 'themeblvd_pto' ),
+                    'desc'      => __( 'Category slug(s) to include.<br>Ex: cat-1<br>Ex: cat-1,cat-2', 'themeblvd_pto' ),
                     'type'      => 'text'
                 ),
                 array(
