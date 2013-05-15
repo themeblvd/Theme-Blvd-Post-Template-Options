@@ -1,8 +1,8 @@
-=== Theme Blvd Layout Builder ===
+=== Theme Blvd Post Template Options ===
 Author URI: http://www.jasonbobich.com
 Contributors: themeblvd
-Tags: layouts, custom, homepage, builder, Theme Blvd, themeblvd, Jason Bobich
-Stable Tag: 1.1.0
+Tags: query, template, post list, post grid, Theme Blvd, themeblvd, Jason Bobich
+Stable Tag: 1.0.0
 
 This plugins adds a meta box to reveal available custom fields you can use with Post List/Grid page templates of a Theme Blvd theme.
 
