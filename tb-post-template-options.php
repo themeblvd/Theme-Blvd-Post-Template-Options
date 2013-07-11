@@ -80,7 +80,7 @@ class Theme_Blvd_Post_Template_Options {
      * Load plugin's textdomain "themeblvd_pto"
      */
     public function localize() {
-       load_plugin_textdomain( 'themeblvd_tpo', false, TB_PTO_PLUGIN_DIR . '/lang' );
+       load_plugin_textdomain( 'themeblvd_pto', false, TB_PTO_PLUGIN_DIR . '/lang' );
     }
 
     /**
@@ -179,7 +179,7 @@ class Theme_Blvd_Post_Template_Options {
             $options = apply_filters( 'themeblvd_pto_options', $options );
 
             // Create Meta Box object
-            $_themeblvd_pto_meta_box = new Theme_Blvd_Meta_Box( $config, $options );
+            $_themeblvd_pto_meta_box = new Theme_Blvd_Meta_Box( 'tb_pto_options', $config, $options );
 
         }
     }
