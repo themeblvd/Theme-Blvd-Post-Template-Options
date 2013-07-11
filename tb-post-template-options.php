@@ -26,24 +26,24 @@ License: GPL2
 */
 
 define( 'TB_PTO_PLUGIN_VERSION', '1.0.0' );
-define( 'TB_PTO_PLUGIN_DIR', dirname( __FILE__ ) ); 
+define( 'TB_PTO_PLUGIN_DIR', dirname( __FILE__ ) );
 define( 'TB_PTO_PLUGIN_URI', plugins_url( '' , __FILE__ ) );
 
 /**
  * Setup Post Template Options plugin.
  */
 class Theme_Blvd_Post_Template_Options {
- 
+
     /**
-     * Only instance of object.  
+     * Only instance of object.
      */
     private static $instance = null;
 
     /**
-     * Whether or not the plugin can run.  
+     * Whether or not the plugin can run.
      */
     private $run = true;
- 
+
     /**
      * Creates or returns an instance of this class.
      *
@@ -55,7 +55,7 @@ class Theme_Blvd_Post_Template_Options {
         }
         return self::$instance;
     }
- 
+
     /**
      * Initiate plugin.
      */
@@ -84,7 +84,7 @@ class Theme_Blvd_Post_Template_Options {
     }
 
     /**
-     * Handle nag message 
+     * Handle nag message
      */
     public function show_nag() {
         global $current_user;
@@ -107,12 +107,12 @@ class Theme_Blvd_Post_Template_Options {
      */
     public function run() {
         if( $this->run ) {
-            
+
             global $_themeblvd_pto_meta_box;
 
             // Setup Config for meta box
             $config = array(
-                'id'        => 'tb_pto_options',  
+                'id'        => 'tb_pto_options',
                 'title'     => __( 'Post Template Options', 'themeblvd' ),
                 'page'      => array( 'page' ),
                 'context'   => 'normal',
