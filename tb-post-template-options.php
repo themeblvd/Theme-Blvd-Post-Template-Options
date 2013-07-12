@@ -112,11 +112,12 @@ class Theme_Blvd_Post_Template_Options {
 
             // Setup Config for meta box
             $config = array(
-                'id'        => 'tb_pto_options',
-                'title'     => __( 'Post Template Options', 'themeblvd' ),
-                'page'      => array( 'page' ),
-                'context'   => 'normal',
-                'priority'  => 'low'
+                'id'            => 'tb_pto_options',
+                'title'         => __( 'Post Template Options', 'themeblvd' ),
+                'page'          => array( 'page' ),
+                'context'       => 'normal',
+                'priority'      => 'low',
+                'save_empty'    => false
             );
             $config = apply_filters( 'themeblvd_pto_config', $config );
 
