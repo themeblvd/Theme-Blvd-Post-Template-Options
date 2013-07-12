@@ -122,54 +122,54 @@ class Theme_Blvd_Post_Template_Options {
 
             // Setup options for meta box
             $options = array(
-                array(
+                'desc' => array(
                     'id'        => 'desc',
                     'desc'      => __( '<p>Below are the custom fields you can use with the Post List and Post Grid page templates. When working with these options, you can find a lot of helpful information by viewing WordPress\'s Codex page on the <a href="http://codex.wordpress.org/Class_Reference/WP_Query" target="_blank">WP Query</a>.</p><p class="note">Note: When using the Post List template, categories excluded from Appearance > Theme Options > Content > Primary Posts will be excluded here by default. Using the "cat" or "category_name" custom fields will override this.</p>', 'themeblvd_pto' ),
                     'type'      => 'info'
                 ),
-                array(
+                'cat' => array(
                     'id'        => 'cat',
                     'name'      => __( 'cat', 'themeblvd_pto' ),
                     'desc'      => __( 'Category ID(s) to include/exclude.<br>Ex: 1<br>Ex: 1,2,3<br>Ex: -1,-2,-3', 'themeblvd_pto' ),
                     'type'      => 'text'
                 ),
-                array(
+                'category_name' => array(
                     'id'        => 'category_name',
                     'name'      => __( 'category_name', 'themeblvd_pto' ),
                     'desc'      => __( 'Category slug(s) to include.<br>Ex: cat-1<br>Ex: cat-1,cat-2', 'themeblvd_pto' ),
                     'type'      => 'text'
                 ),
-                array(
+                'posts_per_page' => array(
                     'id'        => 'posts_per_page',
                     'name'      => __( 'posts_per_page', 'themeblvd_pto' ),
                     'desc'      => __( 'Number of posts per page. Only for Post List template; Post Grid uses rows*columns.', 'themeblvd_pto' ),
                     'type'      => 'text'
                 ),
-                array(
+                'orderby' => array(
                     'id'        => 'orderby',
                     'name'      => __( 'orderby', 'themeblvd_pto' ),
                     'desc'      => __( 'What to order posts by -- date, title, rand, etc.<br>(<a href="http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters" target="_blank">Learn More</a>)', 'themeblvd_pto' ),
                     'type'      => 'text'
                 ),
-                array(
+                'order' => array(
                     'id'        => 'order',
                     'name'      => __( 'order', 'themeblvd_pto' ),
                     'desc'      => __( 'How to order posts -- ASC or DESC.<br>(<a href="http://codex.wordpress.org/Class_Reference/WP_Query#Order_.26_Orderby_Parameters" target="_blank">Learn More</a>)', 'themeblvd_pto' ),
                     'type'      => 'text'
                 ),
-                array(
+                'query' => array(
                     'id'        => 'query',
                     'name'      => __( 'query', 'themeblvd_pto' ),
                     'desc'      => __( 'A custom query string. This will override other options.<br>Ex: tag=baking<br>Ex: post_type=my_type&my_tax=my_term', 'themeblvd_pto' ),
                     'type'      => 'text'
                 ),
-                array(
+                'columns' => array(
                     'id'        => 'columns',
                     'name'      => __( 'columns', 'themeblvd_pto' ),
                     'desc'      => __( 'Number of columns for Post Grid template. When empty, this will default to 3.', 'themeblvd_pto' ),
                     'type'      => 'text'
                 ),
-                array(
+                'rows' => array(
                     'id'        => 'rows',
                     'name'      => __( 'rows', 'themeblvd_pto' ),
                     'desc'      => __( 'Number of rows for Post Grid template. When empty, this will default to 4.', 'themeblvd_pto' ),
