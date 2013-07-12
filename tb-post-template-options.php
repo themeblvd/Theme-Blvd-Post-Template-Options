@@ -139,6 +139,12 @@ class Theme_Blvd_Post_Template_Options {
                     'desc'      => __( 'Category slug(s) to include.<br>Ex: cat-1<br>Ex: cat-1,cat-2', 'themeblvd_pto' ),
                     'type'      => 'text'
                 ),
+                'tag' => array(
+                    'id'        => 'tag',
+                    'name'      => __( 'tag', 'themeblvd_pto' ),
+                    'desc'      => __( 'Tag(s) to include.<br>Ex: tag-1<br>Ex: tag-1,tag-2', 'themeblvd_pto' ),
+                    'type'      => 'text'
+                ),
                 'posts_per_page' => array(
                     'id'        => 'posts_per_page',
                     'name'      => __( 'posts_per_page', 'themeblvd_pto' ),
