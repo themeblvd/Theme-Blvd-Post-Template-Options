@@ -8,9 +8,9 @@ This plugins adds a meta box to reveal available custom fields you can use with 
 
 == Description ==
 
-**NOTE: This plugin requires Theme Blvd framework v2.3+**
+You may not be aware that when you're using the Post Grid or Post List template in your [Theme Blvd](http://www.themeblvd.com) theme you have some cool, super-secret custom fields available to you. This plugins adds a meta box to reveal all of these available custom fields when you're editing your WordPress pages, making them easier to use and maintain.
 
-This plugins adds meta box to reveal available custom fields you can use with Post List/Grid page templates of a Theme Blvd theme.
+**NOTE: This plugin requires Theme Blvd framework v2.3+**
 
 == Installation ==
 
@@ -23,6 +23,7 @@ This plugins adds meta box to reveal available custom fields you can use with Po
 
 == Screenshots ==
 
+1. The meta box of all your options for Post Grid and Post List page templates, which link to custom fields.
 
 == Changelog ==
 

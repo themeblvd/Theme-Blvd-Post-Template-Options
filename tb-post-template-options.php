@@ -3,11 +3,11 @@
 Plugin Name: Theme Blvd Post Template Options
 Description: This plugins adds a meta box to reveal available custom fields you can use with Post List/Grid page templates of a Theme Blvd theme.
 Version: 1.0.0
-Author: Jason Bobich
-Author URI: http://jasonbobich.com
+Author: Theme Blvd
+Author URI: http://themeblvd.com
 License: GPL2
 
-    Copyright 2012  Jason Bobich
+    Copyright 2013  Jason Bobich
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License version 2,
@@ -47,6 +47,8 @@ class Theme_Blvd_Post_Template_Options {
     /**
      * Creates or returns an instance of this class.
      *
+     * @since 1.0.0
+     *
      * @return  Theme_Blvd_Post_Template_Options A single instance of this class.
      */
     public static function get_instance() {
@@ -58,6 +60,8 @@ class Theme_Blvd_Post_Template_Options {
 
     /**
      * Initiate plugin.
+     *
+     * @since 1.0.0
      */
     private function __construct() {
         add_action( 'plugins_loaded', array( $this, 'localize' ) );
@@ -67,6 +71,8 @@ class Theme_Blvd_Post_Template_Options {
 
     /**
      * Check to make sure Theme Blvd framework v2.3 is present.
+     *
+     * @since 1.0.0
      */
     public function check() {
         if( ! class_exists( 'Theme_Blvd_Meta_Box' ) ) {
@@ -78,6 +84,8 @@ class Theme_Blvd_Post_Template_Options {
 
     /**
      * Load plugin's textdomain "themeblvd_pto"
+     *
+     * @since 1.0.0
      */
     public function localize() {
        load_plugin_textdomain( 'themeblvd_pto', false, TB_PTO_PLUGIN_DIR . '/lang' );
@@ -85,6 +93,8 @@ class Theme_Blvd_Post_Template_Options {
 
     /**
      * Handle nag message
+     *
+     * @since 1.0.0
      */
     public function show_nag() {
         global $current_user;
@@ -104,6 +114,8 @@ class Theme_Blvd_Post_Template_Options {
 
     /**
      * Add meta box.
+     *
+     * @since 1.0.0
      */
     public function run() {
         if( $this->run ) {
@@ -191,4 +203,13 @@ class Theme_Blvd_Post_Template_Options {
         }
     }
 }
-Theme_Blvd_Post_Template_Options::get_instance();
+
+/**
+ * Initiate plugin.
+ *
+ * @since 1.0.0
+ */
+function themeblvd_pto_init() {
+    Theme_Blvd_Post_Template_Options::get_instance();
+}
+add_action( 'plugins_loaded', 'themeblvd_pto_init' );
