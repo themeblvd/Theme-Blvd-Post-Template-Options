@@ -1,5 +1,5 @@
 === Theme Blvd Post Template Options ===
-Author URI: http://www.jasonbobich.com
+Author URI: http://www.themeblvd.com
 Contributors: themeblvd
 Tags: query, template, post list, post grid, Theme Blvd, themeblvd, Jason Bobich
 Stable Tag: 1.0.0
